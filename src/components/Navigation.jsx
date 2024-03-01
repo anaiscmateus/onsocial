@@ -35,8 +35,8 @@ export default function Nav() {
             className="sm:hidden"
           />
         )}
-        <NavbarBrand>
-          <p className="font-bold text-inherit text-xl">OnSocial</p>
+        <NavbarBrand as={Link} href="/" color="foreground">
+          <p className="font-bold text-inherit text-xl melodrama">OnSocial</p>
         </NavbarBrand>
       </NavbarContent>
 

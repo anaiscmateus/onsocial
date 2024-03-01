@@ -12,13 +12,17 @@ export default function App() {
   return (
     <Router>
       <Navigation />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/success" element={<Success />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <div className="grid justify-center gap-12">
+        <div className="max-w-7xl">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/success" element={<Success />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </div>
+      </div>
       <Footer />
     </Router>
   );

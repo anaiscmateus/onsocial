@@ -1,4 +1,14 @@
 /* index.css */
+@import url('./css/nunito.css');
+@import url('./css/melodrama.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: "Nunito-Regular", sans-serif;
+}
+
+.melodrama {
+    font-family: "Melodrama-Medium", sans-serif;
+}
