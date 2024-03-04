@@ -16,12 +16,6 @@ export default function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   // Send formData to the server for email processing
-  //   // This might involve calling an API endpoint that handles emails
-  // };
-
   return (
     <>
       <h2>OnSocial Marketing Solutions Intake Form</h2>
@@ -33,6 +27,7 @@ export default function Contact() {
       <form
         name="contact"
         method="POST"
+        action="/success"
       >
       <input type="hidden" name="form-name" value="contact" />
         <Input

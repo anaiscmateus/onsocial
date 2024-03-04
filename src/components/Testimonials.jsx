@@ -27,6 +27,22 @@ export default function Testimonials() {
       </Card>
       <Card>
         <CardHeader>
+          Rooted Sole by Chef Khy
+          <Image
+            src="images/rooted-logo.jpg"
+            alt="Rooted Sole by Chef Khy Logo"
+          />
+        </CardHeader>
+        <CardBody>
+          Mateo has been a gem! They have made working with them seamless and
+          effortless. They’re super creative when it comes to helping with
+          creating content and very helpful when there are areas I’m not
+          familiar with. I tell everyone about Mateo and the wonders they’ve
+          done with my brand!
+        </CardBody>
+      </Card>
+      <Card>
+        <CardHeader>
           Pentridge Station
           <Image
             src="images/pentridge-logo.png"
