@@ -1,7 +1,27 @@
 // Contact.jsx
 import { Link, Input, Textarea, Button } from "@nextui-org/react";
+import { useState } from "react";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    platforms: "",
+    vision: "",
+    budget: "",
+    comments: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   // Send formData to the server for email processing
+  //   // This might involve calling an API endpoint that handles emails
+  // };
+
   return (
     <>
       <h2>OnSocial Marketing Solutions Intake Form</h2>
@@ -11,34 +31,39 @@ export default function Contact() {
         once filled out.
       </p>
       <form
-        name="contact v1"
+        name="contact"
         method="POST"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
       >
-        <input type="hidden" name="form-name" value="contact v1" />
-        <input type="hidden" name="bot-field" />
+      <input type="hidden" name="form-name" value="contact" />
         <Input
           type="text"
           name="name"
           label="Name:"
           placeholder="Biggie Smalls"
+          value={formData.name}
+          onChange={handleChange}
         />
         <Input
           type="email"
           name="email"
           label="Email:"
           placeholder="biggiesmalls@gmail.com"
+          value={formData.email}
+          onChange={handleChange}
         />
         <Input
           type="text"
           name="platforms"
           label="Please list the social platform(s) you will need assistance with managing:"
           placeholder="Instagram, LinkedIn, Email, etc."
+          value={formData.platforms}
+          onChange={handleChange}
         />
         <Textarea
           label="In a couple of sentences, what vision do you have for your social presence, and what are your pain points?:"
           name="vision"
+          value={formData.vision}
+          onChange={handleChange}
         />
         <Input
           label="Please list your budget (per month) for services:"
@@ -50,10 +75,14 @@ export default function Contact() {
               <span className="text-default-400 text-small">$</span>
             </div>
           }
+          value={formData.budget}
+          onChange={handleChange}
         />
         <Textarea
           label="Use this space for comments & questions you would like addressed in the initial email:"
           name="comments"
+          value={formData.comments}
+          onChange={handleChange}
         />
         <Button type="submit">Send</Button>
       </form>
