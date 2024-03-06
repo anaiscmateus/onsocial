@@ -12,11 +12,10 @@ export default function Contact() {
       </p>
       <form
         name="contact v1"
-        method="post"
+        method="POST"
         data-netlify="true"
-        onSubmit="submit"
       >
-        <input type="hidden" name="form" value="contact v1" />
+        <input type="hidden" name="form-name" value="contact v1" />
         <Input
           type="text"
           name="name"
