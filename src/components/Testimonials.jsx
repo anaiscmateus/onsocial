@@ -7,7 +7,10 @@ export default function Testimonials() {
       <Card>
         <CardHeader>
           The Philly Pigeon
-          <Image src="images/pigeon-logo.jpg" alt="Philly Pigeon Poetry Show Logo" />
+          <Image
+            src="images/pigeon-logo.jpg"
+            alt="Philly Pigeon Poetry Show Logo"
+          />
         </CardHeader>
         <CardBody>
           Mateo is the Digital Marketing Manager for our monthly poetry show.
@@ -25,7 +28,10 @@ export default function Testimonials() {
       <Card>
         <CardHeader>
           Pentridge Station
-          <Image src="images/pentridge-logo.png" alt="Pentridge Station Pop-Up Logo" />
+          <Image
+            src="images/pentridge-logo.png"
+            alt="Pentridge Station Pop-Up Logo"
+          />
         </CardHeader>
         <CardBody>
           Mateo has helped our small business grow by expanding our social
