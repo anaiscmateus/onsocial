@@ -10,25 +10,40 @@ export default function Contact() {
         <Link href="mailto:onsocialphl@gmail.com">onsocialphl@gmail.com</Link>{" "}
         once filled out.
       </p>
-
-      <form>
-        <Input label="Name:" placeholder="Biggie Smalls" type="text" />
+      <form
+        name="contact v1"
+        method="post"
+        data-netlify="true"
+        onSubmit="submit"
+      >
+        <input type="hidden" name="form" value="contact v1" />
         <Input
+          type="text"
+          name="name"
+          label="Name:"
+          placeholder="Biggie Smalls"
+        />
+        <Input
+          type="email"
+          name="email"
           label="Email:"
           placeholder="biggiesmalls@gmail.com"
-          type="email"
         />
         <Input
-          label="Please list the social platform(s) you will need assistance with managing: 
-"
-          placeholder="Instagram, LinkedIn, Email, etc."
           type="text"
+          name="platforms"
+          label="Please list the social platform(s) you will need assistance with managing:"
+          placeholder="Instagram, LinkedIn, Email, etc."
         />
-        <Textarea label="In a couple of sentences, what vision do you have for your social presence, and what are your pain points?:" />
+        <Textarea
+          label="In a couple of sentences, what vision do you have for your social presence, and what are your pain points?:"
+          name="vision"
+        />
         <Input
           label="Please list your budget (per month) for services:"
           placeholder="0.00"
           type="number"
+          name="budget"
           startContent={
             <div className="pointer-events-none flex items-center">
               <span className="text-default-400 text-small">$</span>
@@ -37,8 +52,9 @@ export default function Contact() {
         />
         <Textarea
           label="Use this space for comments & questions you would like addressed in the initial email:"
+          name="comments"
         />
-      <Button type="submit">Submit</Button>
+        <Button type="submit">Send</Button>
       </form>
     </>
   );
