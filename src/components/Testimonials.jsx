@@ -3,7 +3,7 @@ import { Card, CardBody, CardHeader } from "@nextui-org/react";
 
 export default function Testimonials() {
   return (
-    <section id="testimonials">
+    <section id="testimonials" className="pt-16">
       <Card>
         <CardHeader>The Philly Pigeon</CardHeader>
         <CardBody>

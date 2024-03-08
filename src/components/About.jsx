@@ -3,7 +3,7 @@ import { Image, Divider } from "@nextui-org/react";
 
 export default function About() {
   return (
-    <section id="about">
+    <section id="about" className="pt-16">
       <>
         <h3>About Us</h3>
         <Divider />
