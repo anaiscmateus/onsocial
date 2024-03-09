@@ -3,7 +3,7 @@ import { Card, CardHeader, CardBody } from "@nextui-org/react";
 
 export default function Services() {
   return (
-    <>
+    <section id="services">
       <Card>
         <CardHeader>Content Creation</CardHeader>
         <CardBody>
@@ -50,6 +50,6 @@ export default function Services() {
           strategies.
         </CardBody>
       </Card>
-    </>
+    </section>
   );
 }

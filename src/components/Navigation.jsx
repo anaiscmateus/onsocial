@@ -1,3 +1,4 @@
+// Navigation.jsx
 import React from "react";
 import {
   Navbar,
@@ -18,7 +19,7 @@ export default function Nav() {
   const menuItems = ["About", "Services", "Testimonials"];
 
   return (
-    <Navbar isBordered onMenuOpenChange={setIsMenuOpen} maxWidth="xl">
+    <Navbar id="navigation" isBordered onMenuOpenChange={setIsMenuOpen} maxWidth="xl">
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -61,7 +62,7 @@ export default function Nav() {
             className="font-semibold"
             endContent={<MessageIcon />}
           >
-            Let&apos;s Chat
+            Contact Us
           </Button>
         </NavbarItem>
       </NavbarContent>

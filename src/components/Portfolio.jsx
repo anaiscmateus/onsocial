@@ -1,7 +1,7 @@
 // Portfolio.jsx
 export default function Portfolio() {
   return (
-    <>
+    <section id="portfolio">
       <div className="relative w-full pt-[141.4286%] mt-6 mb-2 overflow-hidden rounded-lg shadow-lg">
         <iframe
           className="absolute w-full h-full top-0 left-0 border-none p-0 m-0"
@@ -20,6 +20,6 @@ export default function Portfolio() {
         OnSocial Portfolio 2024
       </a>{" "}
       by Mateo Genoveva
-    </>
+    </section>
   );
 }
