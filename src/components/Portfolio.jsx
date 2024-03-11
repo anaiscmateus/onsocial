@@ -11,15 +11,6 @@ export default function Portfolio() {
           title="Canva Portfolio"
         ></iframe>
       </div>
-      <a
-        href="https://www.canva.com/design/DAF78n_yKts/w1Xc-bpEDq2Q1JE7qnAkRQ/view?utm_content=DAF78n_yKts&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-500 hover:text-blue-700"
-      >
-        OnSocial Portfolio 2024
-      </a>{" "}
-      by Mateo Genoveva
     </section>
   );
 }

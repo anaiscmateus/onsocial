@@ -1,5 +1,8 @@
 // About.jsx
 import { Image, Divider } from "@nextui-org/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function About() {
   return (
@@ -30,6 +33,38 @@ export default function About() {
           alt="Mateo the founder of OnSocial Marketing Solutions"
         />
         <p>Mateo Souada // Founder</p>
+        <section id="footer-socials">
+          <ul className="flex gap-3 text-xl">
+            <li>
+              <a
+                href="https://www.linkedin.com/company/onsocial-marketing-solutions/"
+                target="_blank"
+              >
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  className="hover:text-gray-400"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://instagram.com/onsocialphl"
+                target="_blank"
+                className="hover:text-gray-400"
+              >
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:onsocialphl@gmail.com"
+                className="hover:text-gray-400"
+              >
+                <FontAwesomeIcon icon={faEnvelope} />
+              </a>
+            </li>
+          </ul>
+        </section>
       </>
     </section>
   );

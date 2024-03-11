@@ -18,7 +18,7 @@ export default function Nav() {
   const location = useLocation();
   const isContactPage = location.pathname === "/contact";
 
-  const menuItems = ["About", "Services", "Testimonials"];
+  const menuItems = ["About", "Services", "Testimonials", "Portfolio"];
 
   return (
     <Navbar

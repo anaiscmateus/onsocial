@@ -1,11 +1,14 @@
 // Testimonials.jsx
-import { Card, CardBody, CardHeader } from "@nextui-org/react";
+import { Card, CardBody, CardHeader, Image } from "@nextui-org/react";
 
 export default function Testimonials() {
   return (
     <section id="testimonials" className="pt-16">
       <Card>
-        <CardHeader>The Philly Pigeon</CardHeader>
+        <CardHeader>
+          The Philly Pigeon
+          <Image src="images/pigeon-logo.jpg" alt="Philly Pigeon Poetry Show Logo" />
+        </CardHeader>
         <CardBody>
           Mateo is the Digital Marketing Manager for our monthly poetry show.
           Mateo has been a huge asset to our team, freeing up the time of our
@@ -20,7 +23,10 @@ export default function Testimonials() {
         </CardBody>
       </Card>
       <Card>
-        <CardHeader>Pentridge Station</CardHeader>
+        <CardHeader>
+          Pentridge Station
+          <Image src="images/pentridge-logo.png" alt="Pentridge Station Pop-Up Logo" />
+        </CardHeader>
         <CardBody>
           Mateo has helped our small business grow by expanding our social
           network reach and working with us to better define the
