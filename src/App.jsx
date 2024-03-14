@@ -1,12 +1,21 @@
 // App.jsx
 import "./App.css";
-import { Button } from "@nextui-org/react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
+import Navigation from "./components/Navigation";
 
 export default function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline ml-3 my-3">Hello world!</h1>
-      <Button className="ml-3">Click Me!</Button>
+      <Navigation />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Router>
     </>
   );
 }
