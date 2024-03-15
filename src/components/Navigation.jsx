@@ -47,7 +47,7 @@ export default function Nav() {
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#">
-            Projects
+            Portfolio
           </Link>
         </NavbarItem>
       </NavbarContent>
