@@ -12,8 +12,8 @@ export default function App() {
   return (
     <Router>
       <Navigation />
-      <div className="grid justify-center gap-12">
-        <div className="max-w-7xl">
+      <div className="grid justify-center gap-12 p-6">
+        <div className="max-w-7xl w-full">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />

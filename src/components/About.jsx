@@ -6,11 +6,11 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function About() {
   return (
-    <section id="about" className="pt-16">
-      <>
-        <h3>About Us</h3>
-        <Divider />
-        <p>
+    <section id="about" className="pt-16 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <section className="md:col-span-3">
+        <h3 className="text-3xl melodrama">About Us</h3>
+        <Divider className="my-3" />
+        <p className="tracking-wider">
           OnSocial Marketing Solutions is revolutionizing social media for small
           businesses, taking the weight off of business owners&lsquo; shoulders
           so they can focus on what matters most. The founder of OnSocial is
@@ -25,15 +25,16 @@ export default function About() {
           Suite, Mateo can bring your sales goals to fruition by appealing to
           modern digital audiences.
         </p>
-      </>
-      <>
+      </section>
+      <section className="md:col-span-1 w-full ">
         <Image
-          width={250}
+          width={300}
           src="/images/mateo.jpg"
           alt="Mateo the founder of OnSocial Marketing Solutions"
+          className="mb-4"
         />
         <p>Mateo Souada // Founder</p>
-        <section id="footer-socials">
+        <section id="about-socials">
           <ul className="flex gap-3 text-xl">
             <li>
               <a
@@ -65,7 +66,7 @@ export default function About() {
             </li>
           </ul>
         </section>
-      </>
+      </section>
     </section>
   );
 }

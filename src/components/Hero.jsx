@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="px-3 min-h-screen grid items-center text-center"
+      className="min-h-screen grid items-center text-center"
     >
       <div>
         <h1 className="melodrama text-7xl mb-12">
