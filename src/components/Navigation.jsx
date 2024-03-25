@@ -36,7 +36,7 @@ export default function Nav() {
           />
         )}
         <NavbarBrand as={Link} href="/" color="foreground">
-          <p className="font-bold text-inherit text-xl melodrama">OnSocial</p>
+          <p className="font-bold text-inherit text-3xl melodrama">OnSocial</p>
         </NavbarBrand>
       </NavbarContent>
 
@@ -44,7 +44,7 @@ export default function Nav() {
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           {menuItems.map((item, index) => (
             <NavbarItem key={index}>
-              <Link color="foreground" href={`#${item.toLowerCase()}`}>
+              <Link color="foreground" className="text-xl" href={`#${item.toLowerCase()}`}>
                 {item}
               </Link>
             </NavbarItem>
@@ -60,7 +60,7 @@ export default function Nav() {
               href="/"
               variant="flat"
               radius="none"
-              className="font-semibold"
+              className="font-semibold text-xl"
             >
               Return to Home
             </Button>
@@ -70,7 +70,7 @@ export default function Nav() {
               href="/contact"
               variant="flat"
               radius="none"
-              className="font-semibold"
+              className="font-semibold text-xl"
               endContent={<MessageIcon />}
             >
               Contact Us

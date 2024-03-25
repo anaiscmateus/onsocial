@@ -6,9 +6,9 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen grid items-center justify-center text-center"
+      className="min-h-screen grid items-center justify-center text-center w-full"
     >
-      <div className="max-w-7xl">
+      <div>
         <h1 className="melodrama text-7xl mb-12">
           Providing businesses with well-rounded Social Media Management
         </h1>
@@ -16,7 +16,7 @@ export default function Hero() {
           <Button
             as={Link}
             href="/contact"
-            className="font-semibold"
+            className="font-semibold text-2xl"
             variant="flat"
             size="lg"
             radius="none"

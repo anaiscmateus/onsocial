@@ -9,9 +9,9 @@ export default function About() {
     <section id="about" className="pt-16 px-6 grid justify-center">
       <section className="grid md:grid-cols-4 gap-8 max-w-7xl">
         <section className="md:col-span-3">
-          <h3 className="text-2xl font-semibold">About Us</h3>
-          <Divider className="my-3" />
-          <p className="tracking-wider">
+          <h3 className="text-4xl font-semibold">About Us</h3>
+          <Divider className="my-6" />
+          <p className="text-2xl tracking-wider">
             OnSocial Marketing Solutions is revolutionizing social media for
             small businesses, taking the weight off of business owners&lsquo;
             shoulders so they can focus on what matters most. The founder of
@@ -34,9 +34,9 @@ export default function About() {
             alt="Mateo the founder of OnSocial Marketing Solutions"
             className="mb-4"
           />
-          <p>Mateo Souada // Founder</p>
+          <p className="text-3xl">Mateo Souada, Founder</p>
           <section id="about-socials">
-            <ul className="flex gap-3 text-xl">
+            <ul className="flex gap-3 text-3xl my-3">
               <li>
                 <a
                   href="https://www.linkedin.com/company/onsocial-marketing-solutions/"

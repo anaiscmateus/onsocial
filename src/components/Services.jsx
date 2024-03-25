@@ -5,14 +5,14 @@ export default function Services() {
   return (
     <section id="services" className="pt-16 px-6 grid justify-center">
       <div className="max-w-7xl">
-        <h3 className="text-2xl font-semibold">Services</h3>
-        <Divider className="my-3" />
-        <section className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <h3 className="text-4xl font-semibold">Services</h3>
+        <Divider className="my-6" />
+        <section className="grid md:grid-cols-2 gap-6">
           <Card>
-            <CardHeader className="font-bold flex gap-2">
+            <CardHeader className="font text-2xl flex gap-2">
               Content Creation
             </CardHeader>
-            <CardBody className="tracking-wide">
+            <CardBody className="tracking-wide text-xl">
               Crafting engaging and original content tailored to your
               brand&apos;s voice and audience, elevating your social media
               presence.
