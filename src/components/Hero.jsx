@@ -6,9 +6,9 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen grid items-center text-center"
+      className="min-h-screen grid items-center justify-center text-center"
     >
-      <div>
+      <div className="max-w-7xl">
         <h1 className="melodrama text-7xl mb-12">
           Providing businesses with well-rounded Social Media Management
         </h1>
