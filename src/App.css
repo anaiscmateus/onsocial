@@ -11,7 +11,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("images/philly.jpg");
+  background-image: url("/images/philly.jpg");
   background-size: cover;
   filter: grayscale(100%);
   opacity: 0.5; /* Adjust the transparency level as needed */
