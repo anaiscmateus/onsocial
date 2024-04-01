@@ -6,7 +6,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function About() {
   return (
-    <section id="about" className="pt-20 px-6 grid justify-center">
+    <section id="about" className="py-28 px-6 grid justify-center">
       <h3 className="text-4xl font-semibold">Who&lsquo;s OnSocial?</h3>
       <Divider className="my-6" />
       <section className="grid lg:grid-cols-12 gap-8 max-w-7xl items-center">

@@ -3,7 +3,7 @@ import { Card, CardBody, CardHeader, Image } from "@nextui-org/react";
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="pt-16 px-6 grid justify-center">
+    <section id="testimonials" className="py-28 px-6 grid justify-center">
       <section className="max-w-7xl grid gap-8">
         <Card>
           <CardHeader>
