@@ -12,3 +12,7 @@ body {
 .melodrama {
     font-family: "Melodrama-Medium", sans-serif;
 }
+
+html,body{
+    overflow-x: hidden;
+}
