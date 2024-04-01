@@ -8,21 +8,21 @@ export default function Hero() {
       id="hero"
       className="min-h-screen grid items-center justify-center text-center w-full"
     >
-      <div>
+      <div className="px-6">
         <h1 className="melodrama text-7xl mb-12">
-          Providing businesses with well-rounded Social Media Management
+          Providing small businesses with well-rounded and accessible Social Media Management services
         </h1>
+        <p className="mb-12 text-4xl italic">Based in Philly, Serving Everywhere</p>
         <div>
           <Button
             as={Link}
             href="/contact"
-            className="font-semibold text-2xl"
-            variant="flat"
+            className="text-2xl bg-indigo-500 font-semibold"
             size="lg"
             radius="none"
             endContent={<MessageIcon />}
           >
-            Let&apos;s Chat
+            Let&apos;s Collab!
           </Button>
         </div>
       </div>

@@ -13,7 +13,7 @@ export default function App() {
   return (
     <Router>
       <Navigation />
-      <div className="grid justify-center gap-12">
+      <>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
@@ -21,7 +21,7 @@ export default function App() {
           <Route path="/success" element={<Success />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </div>
+      </>
       <Footer />
     </Router>
   );
