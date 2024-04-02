@@ -1,11 +1,20 @@
 // Testimonials.jsx
-import { Card, CardBody, CardHeader, Image } from "@nextui-org/react";
+import { Divider } from "@nextui-org/react";
+import { EmblaCarousel } from "./EmblaCarousel";
 
 export default function Testimonials() {
   return (
     <section id="testimonials" className="py-28 px-6 grid justify-center">
+      <h3 className="text-4xl font-semibold">Here&lsquo;s what others say about OnSocial...</h3>
+      <Divider className="my-6" />
       <section className="max-w-7xl grid gap-8">
-        <Card>
+        <EmblaCarousel />
+      </section>
+    </section>
+  );
+}
+
+{/* <Card>
           <CardHeader>
             The Philly Pigeon
             <Image
@@ -65,8 +74,4 @@ export default function Testimonials() {
             with my community. Mateo steps in when I might not have the capacity
             to do so and I’m so happy to have them as a part of our team!
           </CardBody>
-        </Card>
-      </section>
-    </section>
-  );
-}
+        </Card> */}
