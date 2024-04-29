@@ -19,7 +19,7 @@ export default function Hero() {
         <div>
           <Button
             as={Link}
-            href="/contact"
+            href="#contact"
             className="text-2xl bg-indigo-700 font-semibold"
             size="lg"
             radius="none"

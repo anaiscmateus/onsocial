@@ -6,7 +6,7 @@ import { faEnvelope, faHeart } from "@fortawesome/free-solid-svg-icons";
 function Footer() {
   return (
     <footer className="flex justify-center px-6 pt-28 pb-8">
-      <nav className="max-w-7xl w-full flex justify-between items-center">
+      <nav className="max-w-7xl w-full sm:flex sm:justify-between sm:items-center text-center sm:text-left">
         <div>
           <p>OnSocial Marketing Solutions LLC ©</p>
           <p className="text-sm pt-2">
@@ -15,7 +15,7 @@ function Footer() {
             <a className="underline" target="_blank" href="https://anaiscodes.netlify.app/">Anaïs Mateus</a>
           </p>
         </div>
-        <section id="footer-socials">
+        <section id="footer-socials" className="flex justify-center sm:py-0 py-3">
           <ul className="flex gap-3 text-2xl">
             <li>
               <a

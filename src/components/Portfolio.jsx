@@ -30,8 +30,8 @@ export default function Portfolio() {
     },
   ];
   return (
-    <section id="portfolio" className="mt-6 mb-3 flex justify-center px-6">
-      <div className="max-w-7xl relative w-full  overflow-hidden rounded-lg shadow-md">
+    <section id="portfolio" className="py-28 px-6 flex justify-center">
+      <div className="max-w-7xl relative w-full overflow-hidden rounded-lg shadow-md">
       <h3 className="text-4xl font-semibold text-center">Portfolio</h3>
         <Divider className="my-6" />
         <PortfolioCarousel data={data} />
