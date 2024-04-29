@@ -1,15 +1,40 @@
 // Portfolio.jsx
+import PortfolioCarousel from "./PortfolioCarousel";
+import { Divider } from "@nextui-org/react";
+
 export default function Portfolio() {
+  const data = [
+    {
+      image: "images/1.png",
+    },
+    {
+      image: "images/2.png",
+    },
+    {
+      image: "images/3.png",
+    },
+    {
+      image: "images/4.png",
+    },
+    {
+      image: "images/5.png",
+    },
+    {
+      image: "images/6.png",
+    },
+    {
+      image: "images/7.png",
+    },
+    {
+      image: "images/8.png",
+    },
+  ];
   return (
-    <section id="portfolio" className="pt-16 px-6">
-      <div className="relative w-full pt-[141.4286%] mt-6 mb-2 overflow-hidden rounded-lg shadow-lg">
-        <iframe
-          className="absolute w-full h-full top-0 left-0 border-none p-0 m-0"
-          loading="lazy"
-          src="https://www.canva.com/design/DAF78n_yKts/w1Xc-bpEDq2Q1JE7qnAkRQ/view?embed"
-          allowFullScreen
-          title="Canva Portfolio"
-        ></iframe>
+    <section id="portfolio" className="mt-6 mb-3 flex justify-center px-6">
+      <div className="max-w-7xl relative w-full  overflow-hidden rounded-lg shadow-md">
+      <h3 className="text-4xl font-semibold text-center">Portfolio</h3>
+        <Divider className="my-6" />
+        <PortfolioCarousel data={data} />
       </div>
     </section>
   );

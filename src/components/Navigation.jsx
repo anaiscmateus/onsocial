@@ -23,7 +23,7 @@ export default function Nav() {
 
   return (
     <Navbar
-      id="navigation"
+      id="header"
       isBordered
       onMenuOpenChange={setIsMenuOpen}
       maxWidth="xl"
@@ -67,7 +67,7 @@ export default function Nav() {
           ) : (
             <Button
               as={Link}
-              href="/contact"
+              href="#contact"
               variant="flat"
               radius="none"
               className="font-semibold"

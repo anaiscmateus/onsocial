@@ -11,9 +11,9 @@ export default function Services() {
   return (
     <section id="services" className="py-28 px-6 grid justify-center">
       <div className="grid max-w-7xl">
-        <h3 className="text-4xl font-semibold">Services</h3>
+        <h3 className="text-4xl font-semibold text-center">Services</h3>
         <Divider className="my-6" />
-        <p className="mb-5 text-xl">
+        <p className="mb-5 text-xl text-center">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
           ducimus et expedita voluptatibus aperiam, consequuntur eligendi
           adipisci fugit inventore. Est provident hic illum ipsa rem laudantium

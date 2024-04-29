@@ -1,8 +1,8 @@
-// Contact.jsx
+// ContactForm.jsx
 import { Link, Input, Textarea, Button } from "@nextui-org/react";
 import { useState } from "react";
 
-export default function Contact() {
+export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
