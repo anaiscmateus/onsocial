@@ -14,7 +14,7 @@ const TestimonialCarousel = ({ testimonials }) => {
   return (
     <div className="flex items-center justify-center">
       <button
-        className="text-4xl text-gray-600 hover:text-gray-800 p-4"
+        className="hidden sm:inline text-4xl text-gray-600 hover:text-gray-800 p-4"
         onClick={goToPrevious}
       >
         &lt;
@@ -34,7 +34,7 @@ const TestimonialCarousel = ({ testimonials }) => {
         <p className="text-sm text-gray-500">{testimonials[currentIndex].source}</p>
       </div>
       <button
-        className="text-4xl text-gray-600 hover:text-gray-800 p-4"
+        className="hidden sm:inline text-4xl text-gray-600 hover:text-gray-800 p-4"
         onClick={goToNext}
       >
         &gt;

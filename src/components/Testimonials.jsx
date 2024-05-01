@@ -16,7 +16,7 @@ export default function Testimonials() {
       author: "Khyania Adams",
       source: "Rooted Soul",
       text:
-        "Mateo has been a gem! They have made working with them seamless andeffortless. They’re super creative when it comes to helping withcreating content and very helpful when there are areas I’m not familiar with. I tell everyone about Mateo and the wonders they’ve done with my brand!",
+        "Mateo has been a gem! They have made working with them seamless andeffortless. They’re super creative when it comes to helping with creating content and very helpful when there are areas I’m not familiar with. I tell everyone about Mateo and the wonders they’ve done with my brand!",
     },
     {
       image: "images/pentridge-logo.png",
