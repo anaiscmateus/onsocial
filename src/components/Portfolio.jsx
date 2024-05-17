@@ -1,6 +1,7 @@
 // Portfolio.jsx
 import PortfolioCarousel from "./PortfolioCarousel";
 import { Divider } from "@nextui-org/react";
+import ScrollAnimation from "react-animate-on-scroll";
 
 export default function Portfolio() {
   const data = [
@@ -30,12 +31,14 @@ export default function Portfolio() {
     },
   ];
   return (
-    <section id="portfolio" className="py-28 px-6 flex justify-center">
-      <div className="max-w-7xl relative w-full overflow-hidden rounded-lg shadow-md">
-      <h3 className="text-4xl font-semibold text-center">Portfolio</h3>
-        <Divider className="my-6" />
-        <PortfolioCarousel data={data} />
-      </div>
-    </section>
+    <ScrollAnimation animateIn="animate__fadeIn">
+      <section id="portfolio" className="py-28 px-6 flex justify-center">
+        <div className="max-w-7xl relative w-full overflow-hidden rounded-lg shadow-md">
+          <h3 className="text-4xl font-semibold text-center">Check out my latest projects!</h3>
+          <Divider className="my-6" />
+          <PortfolioCarousel data={data} />
+        </div>
+      </section>
+    </ScrollAnimation>
   );
 }
